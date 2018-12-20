@@ -8,9 +8,11 @@ using an usbasp programmer. The fuses should be set to use 8 MHz internal
 oscillator, **no divider**
 
 ## How many LEDs?
-The number of LEDs is currently hardcoded in the firmware. The maximum number
+The maximum number of LEDs is currently hardcoded in the firmware. The maximum number
 depends on the amount of RAM available on your AVR.
 An Attiny45 should be able to drive 82 LEDs, and an Attiny85, 167.
+
+_Note: This source code is set to 160 LEDs for Attiny85._
 
 ## Circuit
 
@@ -56,6 +58,7 @@ cd neopixel_i2c
 git submodule update --init --recursive
 ```
 
+_Note: This forked code will be "satakagi" instead of "usedbytes"._
 
 ## Basic Functionality
 
@@ -70,7 +73,7 @@ register.
 
 ## i2c Protocol
 
-**The slave address is currently hardcoded to 0x40 in the firmware**, see
+**The slave address is currently hardcoded to 0x41 in the firmware**, see
 
 ```
 i2c/i2c_slave_defs.h:30
