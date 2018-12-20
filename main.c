@@ -28,7 +28,7 @@ static inline void update_leds(void)
 
 void do_reset(void)
 {
-	char i = N_LEDS * 3;
+	uint16_t i = N_LEDS * 3;
 	volatile uint8_t *p = i2c_reg + I2C_N_GLB_REG;
 
 	cli();

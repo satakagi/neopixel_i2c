@@ -81,6 +81,8 @@ This utilises my i2c slave library (https://github.com/usedbytes/usi_i2c_slave)
 which means it follows a fairly standard i2c protocol (for more, see here:
 http://www.robot-electronics.co.uk/i2c-tutorial).
 
+The first 84 LEDs can control emission directly and obtain the emission state with mapped registers. The 85th and subsequent LEDs, which can not be mapped to registers, can only command emission using burst write.
+
 Writes look like this:
 
 | Start | Slave Address << 1 | Register Address | Data | Stop |
