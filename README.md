@@ -64,7 +64,7 @@ _Note: This forked code will be "satakagi" instead of "usedbytes"._
 
 Use WinAVR on Cygwin.
 
-* make (vompile)
+* make (compile)
 * make program (transfer code)
 * make fuses (set required fuse bits)
 
