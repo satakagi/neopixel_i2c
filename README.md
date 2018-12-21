@@ -60,6 +60,14 @@ git submodule update --init --recursive
 
 _Note: This forked code will be "satakagi" instead of "usedbytes"._
 
+### make and transfer firmware
+
+Use WinAVR on Cygwin.
+
+* make (vompile)
+* make program (transfer code)
+* make fuses (set required fuse bits)
+
 ## Basic Functionality
 
 There are two basic operating modes:
